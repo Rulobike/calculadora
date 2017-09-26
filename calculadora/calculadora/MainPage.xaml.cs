@@ -36,7 +36,7 @@ namespace calculadora
             else
             {
                 dato1 = double.Parse(caja.Text);
-                resultado = dato1;
+                resultado = dato1; 
                 caja.Text = Math.Sqrt(dato1).ToString();
             }
 
