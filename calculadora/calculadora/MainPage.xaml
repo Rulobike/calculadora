@@ -4,6 +4,50 @@
              xmlns:local="clr-namespace:calculadora"
              x:Class="calculadora.MainPage">
 
-	
+    <ContentPage.Content>
 
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Grid.ColumnSpan="4"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" FormattedText="0" TextColor="White" BackgroundColor="Black" FontSize="Large" FontAttributes="Bold" x:Name="caja"></Label>
+            <Button Grid.Column="0" Grid.Row="1" Text="%" BackgroundColor="Gray" TextColor="White" Clicked="Porcentaje"/>
+            <Button Grid.Column="1" Grid.Row="1" Text="√" BackgroundColor="Gray" TextColor="White" Clicked="sqrt"/>
+            <Button Grid.Column="2" Grid.Row="1" Text="^2" BackgroundColor="Gray" TextColor="White" Clicked="Cuadrado"/>
+            <Button Grid.Column="0" Grid.Row="6" Text="1/X" BackgroundColor="Gray" TextColor="White" Clicked="Unox"/>
+            <Button Grid.Column="0" Grid.Row="2" Text="CE" BackgroundColor="Gray" TextColor="White" Clicked="CE"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="C" BackgroundColor="Gray" TextColor="White" Clicked="C"/>
+            <Button Grid.Column="2" Grid.Row="2" Text="←" BackgroundColor="Gray" TextColor="White" Clicked="R"/>
+            <Button Grid.Column="3" Grid.Row="2" Text="/" BackgroundColor="Gray" TextColor="White" Clicked="Divicion"/>
+            <Button Grid.Column="0" Grid.Row="3" Text="7" BackgroundColor="Black" TextColor="White" Clicked="Siete"/>
+            <Button Grid.Column="1" Grid.Row="3" Text="8" BackgroundColor="Black" TextColor="White" Clicked="Ocho" />
+            <Button Grid.Column="2" Grid.Row="3" Text="9" BackgroundColor="Black" TextColor="White" Clicked="Nueve"/>
+            <Button Grid.Column="3" Grid.Row="3" Text="x" BackgroundColor="Gray" TextColor="White" Clicked="Multiplicacion"/>
+            <Button Grid.Column="0" Grid.Row="4" Text="4" BackgroundColor="Black" TextColor="White" Clicked="Cuatro"/>
+            <Button Grid.Column="1" Grid.Row="4" Text="5" BackgroundColor="Black" TextColor="White" Clicked="Cinco"/>
+            <Button Grid.Column="2" Grid.Row="4" Text="6" BackgroundColor="Black" TextColor="White" Clicked="Seis"/>
+            <Button Grid.Column="3" Grid.Row="4" Text="-" BackgroundColor="Gray" TextColor="White"  Clicked="Resta"/>
+            <Button Grid.Column="0" Grid.Row="5" Text="1" BackgroundColor="Black" TextColor="White" Clicked="Uno"/>
+            <Button Grid.Column="1" Grid.Row="5" Text="2" BackgroundColor="Black" TextColor="White" Clicked="Dos"/>
+            <Button Grid.Column="2" Grid.Row="5" Text="3" BackgroundColor="Black" TextColor="White" Clicked="Tres"/>
+            <Button Grid.Column="3" Grid.Row="5" Text="+" BackgroundColor="Gray" TextColor="White"  Clicked="Suma"/>
+            <Button Grid.Column="3" Grid.Row="1" Text="+/-" BackgroundColor="Gray" TextColor="White"  Clicked="Masmen"/>
+            <Button Grid.Column="1" Grid.Row="6" Text="0" BackgroundColor="Black" TextColor="White" Clicked="Cero"/>
+            <Button Grid.Column="2" Grid.Row="6" Text="." BackgroundColor="Gray" TextColor="White"  Clicked="Punto"/>
+            <Button Grid.Column="3" Grid.Row="6" Text="=" BackgroundColor="Gray" TextColor="White"  Clicked="Igual"/>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
